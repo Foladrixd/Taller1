@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicolas David Barrero Gomez">
+    <meta name="description" content="Tutorial para principiantes: cómo iniciar sesión en mysql, crear una base de datos y hacer mostrarlas.">
+    <title>Tutorial de MySql para principiantes</title>
+</head>
+<body>
+    <h1>Tutorial de MySql para principiantes</h1>
+
+    <img src="imagenes/mysql.jpg" alt="Logo de MySql" width="400">
+
+    <p>
+        <strong>MySql</strong> es un sistema de gestión de bases de datos relacional que se utiliza ampliamente en el desarrollo web. En el SENA lo vas a usar
+        para <em>manejar la información</em> de algunas bases de datos relacionales.
+
+    </p>
+
+    <h2>Contenido</h2>
+    <ul>
+        <li><a href="#sesion">1. Crear tu cuenta e iniciar sesión</a></li>
+        <li><a href="#baseedatos">2. Crear una base de datos</a></li>
+        <li><a href="#exportar">3. Exportar tus archivos</a></li>
+    </ul>
+
+    <section id="sesion">
+        <h2>1. Crear tu cuenta e iniciar sesión</h2>
+        <p>
+            Si todavía no tienes cuenta, primero debes crearla. Es gratis.
+        </p>
+        <ol>
+            <li>Dentro de la consola de MySQL, ejecuta el siguiente comando para crear el usuario:</a>.</li>
+            <li>CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED BY 'tu_contraseña';</li>
+            <li>Para que el nuevo usuario pueda trabajar con las bases de datos, asígnale los privilegios necesarios:</li>
+            <li>GRANT ALL PRIVILEGES ON *.* TO 'nombre_usuario'@'localhost' WITH GRANT OPTION;</li>
+            <li>Aplicar los cambios de privilegios inmediatamente:</li>
+            <li>FLUSH PRIVILEGES;</li>
+        </ol>
+        <p>
+            Para entrar las siguientes veces:
+        </p>
+        <ol>
+            <li>Abre tu terminal o símbolo del sistema (cmd) y conéctate al servidor MySQL: mysql -u root -p</li>
+            <li>Introduce la contraseña de administrador (root) cuando te la solicite</li>
+        </ol>
+        <p>
+            <strong>Importante:</strong> nunca compartas tu contraseña con nadie, ni siquiera con un compañero.
+        </p>
+    </section>
+
+    <section id="baseedatos">
+        <h2>2. Crear una base de datos</h2>
+        <p>
+            Una <em>base de datos</em> es como un tabla de tu proyecto guardada en MySQL.
+            Normalmente se crea una por cada proyecto o taller.
+        </p>
+        <ol>
+            <li>Abre MySQL Workbench e inicia sesión en tu servidor</li>
+            <li>En la barra de herramientas superior, haz clic en el icono Create a new schema (representado como un cilindro de base de datos con un signo de más).</li>
+            <li>Escribe el nombre para tu base de datos en el campo Schema Name.</li>
+            <li>ESelecciona la codificación de caracteres por ejemplo, utf8mb4</li>
+            <li>Haz clic en Apply</li>
+            <li>Revisa el código SQL generado y haz clic nuevamente en Apply, y luego en Finish.</li>
+        </ol>
+    </section>
+
+    <section id="exportar">
+        <h2>3. Exportar tus archivos</h2>
+        <p>
+            La forma más fácil, sin usar la terminal, es subirlos desde MySql Workbench.
+        </p>
+        <ol>
+            <li>Abre MySQL Workbench y conéctate a tu servidor.</li>
+            <li>En el panel de navegación lateral , selecciona «Data Export» Exportación de datos.</li>
+            <li>Marca la casilla de la base de datos y las tablas que deseas exportar</li>
+            <li>Elige si prefieres exportar a un archivo SQL independiente (Dump Project Folder o Self-Contained File).</li>
+            <li>Selecciona la ruta de destino en tu computadora y haz clic en «Start Export»</li>
+        </ol>
+    </section>
+    <h2>Para aprender más</h2>
+    <p>
+        Revisa la <a href="https://dev.mysql.com/doc/refman/9.7/en/" target="_blank">documentación oficial de MySQL en español e inglés</a>.
+    </p>
+
+    <p><a href="#">Volver arriba</a></p>
+
+</body>
+</html>

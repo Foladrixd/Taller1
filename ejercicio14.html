@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas y combinación de celdas</title>
+</head>
+<body>
+    <h1>Tablas y combinación de celdas</h1>
+
+    <h2>Parte A</h2>
+    <table border="1">
+        <caption>Relación de libros</caption>
+        <tr>
+            <th>Código</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Editorial</th>
+            <th>Categoría</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td>L001</td>
+            <td>Cien años de soledad</td>
+            <td>Gabriel García Márquez</td>
+            <td>Sudamericana</td>
+            <td>Novela</td>
+            <td>Disponible</td>
+        </tr>
+        <tr>
+            <td>L002</td>
+            <td>El amor en los tiempos del cólera</td>
+            <td>Gabriel García Márquez</td>
+            <td>Oveja Negra</td>
+            <td>Novela</td>
+            <td>Prestado</td>
+        </tr>
+        <tr>
+            <td>L003</td>
+            <td>María</td>
+            <td>Jorge Isaacs</td>
+            <td>Norma</td>
+            <td>Novela</td>
+            <td>Disponible</td>
+        </tr>
+        <tr>
+            <td>L004</td>
+            <td>Don Quijote de la Mancha</td>
+            <td>Miguel de Cervantes</td>
+            <td>Alfaguara</td>
+            <td>Clásico</td>
+            <td>Disponible</td>
+        </tr>
+        <tr>
+            <td>L005</td>
+            <td>El principito</td>
+            <td>Antoine de Saint-Exupéry</td>
+            <td>Salamandra</td>
+            <td>Infantil</td>
+            <td>Prestado</td>
+        </tr>
+        <tr>
+            <td>L006</td>
+            <td>Clean Code</td>
+            <td>Robert C. Martin</td>
+            <td>Prentice Hall</td>
+            <td>Programación</td>
+            <td>Disponible</td>
+        </tr>
+        <tr>
+            <td>L007</td>
+            <td>Eloquent JavaScript</td>
+            <td>Marijn Haverbeke</td>
+            <td>No Starch Press</td>
+            <td>Programación</td>
+            <td>Disponible</td>
+        </tr>
+        <tr>
+            <td>L008</td>
+            <td>1984</td>
+            <td>George Orwell</td>
+            <td>Debolsillo</td>
+            <td>Ciencia ficción</td>
+            <td>Prestado</td>
+        </tr>
+        <tr>
+            <td>L009</td>
+            <td>La vorágine</td>
+            <td>José Eustasio Rivera</td>
+            <td>Panamericana</td>
+            <td>Novela</td>
+            <td>Disponible</td>
+        </tr>
+        <tr>
+            <td>L010</td>
+            <td>Harry Potter y la piedra filosofal</td>
+            <td>J. K. Rowling</td>
+            <td>Salamandra</td>
+            <td>Fantasía</td>
+            <td>En reparación</td>
+        </tr>
+    </table>
+
+    <h2>Parte B</h2>
+    <table border="1">
+        <caption>Horario de formación semanal</caption>
+        <tr>
+            <th>Día</th>
+            <th>Hora</th>
+            <th>Competencia</th>
+            <th>Ambiente</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Lunes</td>
+            <td>1:00 p. m. - 3:00 p. m.</td>
+            <td>HTML y CSS</td>
+            <td>Sala 101</td>
+        </tr>
+        <tr>
+            <td>3:00 p. m. - 6:00 p. m.</td>
+            <td>Lógica de programación</td>
+            <td>Sala 101</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Miércoles</td>
+            <td>1:00 p. m. - 3:00 p. m.</td>
+            <td>Bases de datos</td>
+            <td>Sala 204</td>
+        </tr>
+        <tr>
+            <td>3:00 p. m. - 6:00 p. m.</td>
+            <td>Inglés</td>
+            <td>Sala 105</td>
+        </tr>
+        <tr>
+            <td>Viernes</td>
+            <td>1:00 p. m. - 6:00 p. m.</td>
+            <!-- colspan: la celda ocupa 2 columnas (Competencia y Ambiente) -->
+            <td colspan="2">Proyecto formativo (trabajo en equipo)</td>
+        </tr>
+        <tr>
+            <!-- colspan="4": una sola celda a lo ancho de toda la tabla -->
+            <td colspan="4">Sábado y domingo: descanso</td>
+        </tr>
+    </table>
+</body>
+</html>
